@@ -1,0 +1,69 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color:#330033;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn-primary {
+  background-image: -webkit-linear-gradient(top, #5e005e 0%, #330033 100%);
+  background-image: linear-gradient(to bottom, #5e005e 0%, #330033 100%);
+  background-repeat: repeat-x;
+  border-color: #5e005e;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5e005e', endColorstr='#ff330033', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #5e005e;
+  background-position: 0 0px;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #5e005e;
+  border-color: #330033;
+}
+
+.location>a, p>a {
+	color: #330033;
+	text-decoration: underline;
+}
+
+.location>a:hover, p>a:hover {
+	color: black;
+}
+
+.jumbotron p {
+	font-size: 0.8em;
+}
+
+h1, h2 { color:black; margin-top: 10px;}
+
+hr {
+	border-top: 1px solid #5e005e;
+}
+
+.well { padding: 30px; margin-top: 30px;}
+
+.location {
+	font-size: 0.8em;
+}
+
+.image {
+	padding-top: 30px;
+	text-align: center;
+}
+
+.about .image {
+	padding-top: 0px;
+}
+
+p.larger {
+	font-size: 1.1em;
+}

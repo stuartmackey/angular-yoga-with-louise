@@ -1,0 +1,24 @@
+<div class='well' ng-controller="TimetableCtrl">
+  <h2>Timetable</h2>
+  <hr />
+
+  <p>I am currently running the following classes, please <a href="index.html#/contact">contact</a> me for prices or any other information.</p>
+
+  <div class='row' ng-repeat="entry in timetable">
+    <div class="col-sm-6" ng-repeat='class in entry.classes'>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{entry.day}} {{class.time}}</h3>
+        </div>
+        <div class="panel-body">
+          <div class="entry"> 
+          <div class="type">{{class.type}}</div> 
+          <div class="location">
+            {{class.location.name}} 
+            <span ng-show="class.location.map_link != ''">(<a href='{{class.location.map_link}}'>map</a>)</span>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,25 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" ng-app="myApp">
-<head>
-  <meta charset="utf-8">
-  <title>My AngularJS App</title>
-  <link rel="stylesheet" href="css/app.css"/>
-</head>
-<body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga With Louise - Yoga Classes in Belfast and the Greater Belfast Area</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="verify-v1" content="ZJIkqxH89UHkS6peTS1pSu/uR0+ggGBpaOp0VdvhPL8=" />
+    <meta name="description" content="Hatha Yoga and Indian Head Massage in Belfast and the Greater Belfast Area.">
+    <meta name="keywords" content="Hatha, Yoga, India, Head, Massage, Belfast, Greater Belfast, Cresent Arts Centre, Chair Yoga, Residental Homes">
+    <meta name="author" content="Y O G A * W I T H * L O U I SE">
+    <meta name="revised" content="ENTER">
+    <meta name="generator" content="ENTER">
+    <meta name="language" content="en" />
+    <meta name="robots" content="index,follow" />
 
-  <div ng-view></div>
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
 
-  <div>Angular seed app: v<span app-version></span></div>
+    <!-- Custom styles for this template -->
+    <link href="./css/global.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/app.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container theme-showcase">
+       <div class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html#/home">Yoga With Louise</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html#/home">Home</a></li>
+              <li><a href="index.html#/classes">Classes</a></li>
+              <li><a href="index.html#/timetable">Timetable</a></li>
+              <li><a href="index.html#/other_therapies">Other Therapies</a></li>
+              <li><a href="index.html#/contact">Contact</a></li>
+              <li><a href="index.html#/about">About</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+      <div ng-view></div>
+
+    </div> <!-- /container -->
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
   <script src="../bower_components/angular/angular.js"></script>
   <script src="../bower_components/angular-route/angular-route.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="./lib/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
