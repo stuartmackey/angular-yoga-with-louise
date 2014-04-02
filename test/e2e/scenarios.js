@@ -1,42 +1,76 @@
 'use strict';
 
-/* https://github.com/angular/protractor/blob/master/docs/getting-started.md */
-
 describe('my app', function() {
 
   browser.get('index.html');
 
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
-    expect(browser.getLocationAbsUrl()).toMatch("/view1");
+  it('should automatically redirect to /home when location hash/fragment is empty', function() {
+    expect(browser.getLocationAbsUrl()).toMatch("/home");
   });
 
-
-  describe('view1', function() {
-
+  describe('home', function() {
     beforeEach(function() {
-      browser.get('index.html#/view1');
+      browser.get('index.html#/home');
     });
 
-
-    it('should render view1 when user navigates to /view1', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 1/);
+    it('should render home when user navigates to /home', function() {
+      expect(element.all(by.css('[ng-view] h2')).first().getText()).
+        toMatch(/Welcome to Yoga With Louise./);
     });
-
   });
 
-
-  describe('view2', function() {
-
+  describe('classes', function() {
     beforeEach(function() {
-      browser.get('index.html#/view2');
+      browser.get('index.html#/classes');
     });
 
+    it('should render classes when user navigates to /classes', function() {
+      expect(element.all(by.css('[ng-view] h2')).first().getText()).
+        toMatch(/Classes/);
+    });
+  });
 
-    it('should render view2 when user navigates to /view2', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 2/);
+  describe('timetable', function() {
+    beforeEach(function() {
+      browser.get('index.html#/timetable');
     });
 
+    it('should render classes when user navigates to /timetable', function() {
+      expect(element.all(by.css('[ng-view] h2')).first().getText()).
+        toMatch(/Timetable/);
+    });
+  });
+
+  describe('about', function() {
+    beforeEach(function() {
+      browser.get('index.html#/about');
+    });
+
+    it('should render classes when user navigates to /about', function() {
+      expect(element.all(by.css('[ng-view] h2')).first().getText()).
+        toMatch(/About Me/);
+    });
+  });
+
+  describe('contact', function() {
+    beforeEach(function() {
+      browser.get('index.html#/contact');
+    });
+
+    it('should render classes when user navigates to /contact', function() {
+      expect(element.all(by.css('[ng-view] h2')).first().getText()).
+        toMatch(/Contact Information/);
+    });
+  });
+
+  describe('other therapies', function() {
+    beforeEach(function() {
+      browser.get('index.html#/other_therapies');
+    });
+
+    it('should render classes when user navigates to /other_therapies', function() {
+      expect(element.all(by.css('[ng-view] h2')).first().getText()).
+        toMatch(/Other Therapies/);
+    });
   });
 });
